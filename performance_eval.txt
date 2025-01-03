@@ -1,0 +1,9 @@
+* The most accurate model used leaky_relu and nadam.
+* Had accuracy of 73.36%
+* Had loss 0.8493 and took 195s to fit
+
+* In general, the best performing models used RELU activation functions
+  (relu, leaky_relu, relu6) along with ADAM optimizers (adam, nadam, adamw).
+* These models had accuracies of 71%-74% and losses in the range 0.84-0.9.
+* Most of these models also had reasonable fit times in range 175-195 s.
+* The exceptions, (relu, nadam) and (leaky_relu, adamw) took 2409s and 302s, respectively.
