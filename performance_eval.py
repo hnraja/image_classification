@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 
 # Sort models and print head and tail
 df = pd.read_csv("performance.csv")
-df = df.sort_values(by=['Accuracy'], ascending=[False])
-print(df)
+df = df.sort_values(by=['Loss'], ascending=[True])
+print(df[0:25])
 
 # Visualise model performance
 unique_opt = df.Optimizer.unique()

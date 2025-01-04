@@ -13,13 +13,14 @@ Limitations
     * ships
     * trucks
 * since model is trained on built-in keras datasets containing only these objects 
+* trained on low-res images
 
 
 File Tree
 * model.py 
     * code used to create model.keras
     * fits multiple models and selects best model based on accuracy
-    * long run time (9+ hours), since multiple models tested
+    * long run time (5+ hours), since multiple models tested
     * save model metrics to performance.csv
 * main.py 
     * uses model.keras to identify the images in ./images

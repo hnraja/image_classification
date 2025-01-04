@@ -1,9 +1,29 @@
-* The most accurate model used leaky_relu and nadam.
-* Had accuracy of 73.36%
-* Had loss 0.8493 and took 195s to fit
+In terms of accuracy
+* The best model is (leaky_relu, nadam), which has an accuracy of 72.93%.
+* This is the model saved in "model.keras"
+* The best performing models generally use RELU activation
+  functions (leaky_relu, relu6, relu)
+* Exponential, sigmoid and softmax generally perform the worst.
+* The best performing optimizers are the ADAM functions (adam, adamw, nadam)
+* ftrl and adadelta have the worst performance.
 
-* In general, the best performing models used RELU activation functions
-  (relu, leaky_relu, relu6) along with ADAM optimizers (adam, nadam, adamw).
-* These models had accuracies of 71%-74% and losses in the range 0.84-0.9.
-* Most of these models also had reasonable fit times in range 175-195 s.
-* The exceptions, (relu, nadam) and (leaky_relu, adamw) took 2409s and 302s, respectively.
+In terms of loss
+* The best model (relu, nadam) has a loss of 0.855.
+* Other than the extreme combination (adagrad, exponential) with loss 4818, the loss
+  is less than 2.4.
+* Once again, RELU activations with ADAM optimizers perform the best.
+
+In terms of time
+* Other than the extreme combination (tanh, adamw) with run time 3067s, the run time
+  is general in the range 152-304s
+* The trends are less clear; generally, relu runs faster than other activations
+* Generally, SGD runs faster than other optimizers.
+
+* Overall, the (relu, nadam) model, with
+    * accuracy: 71.59% (rank 6/99)
+    * loss: 0.855340   (rank 1/99)
+    * run time: 162s   (rank 6/99)
+  and the (leaky_relu, nadam) model, with
+    * accuracy: 72.93% (rank 1/99)
+    * loss: 0.877800   (rank 5/99)
+    * run time: 179s   (rank 65/99)
