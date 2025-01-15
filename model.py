@@ -15,7 +15,7 @@ max_accuracy = 0
 # Output dense layer scales the result for probabilities
 
 # finding optimal combination of functions and save to file
-with open("performance.csv", mode="w", newline="") as f:
+with open("performance/performance.csv", mode="w", newline="") as f:
     writer = csv.writer(f)
     writer.writerow(["Activation", "Optimizer", "Accuracy", "Loss", "Time"])
     for activation in ['relu', 'sigmoid', 'softmax', 'softplus', 'softsign', 'tanh', 'selu', 'elu',

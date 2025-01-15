@@ -27,6 +27,8 @@ File Tree
 * images/
     * image source: https://pixabay.com/
     * contains images for testing
+* performance/
+    * contains all the performance evaluation files  
 * performance.csv
     * contains information about models fit and their performance
 * performance_eval.py
@@ -35,9 +37,6 @@ File Tree
     * generates line charts for comparing models 
 * performance_eval.txt
     * observations about models
-* dummy.py
-    * testing small code snippets
-    * to be deleted at completion
 
 
 Learning Objectives

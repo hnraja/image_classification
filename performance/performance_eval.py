@@ -19,5 +19,6 @@ for metric in ['Accuracy', 'Loss', 'Time']:
     plt.xlabel("Activation Function")
     plt.ylabel(f"{metric}")
     plt.legend()
+    plt.savefig(f"{metric}.png")
 plt.show()
 
